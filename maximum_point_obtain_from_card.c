@@ -14,6 +14,8 @@ int maximum_point_obtained_from_card(int arr[], int n, int k)
     int lsum = 0, rsum = 0, maxsum = 0;
     for(int i=0; i<k; i++) {
         lsum = lsum + arr[i];
+
+        
     }
     /* assuming we have added all four now to lsum */
     int rindex = n-1;
