@@ -57,10 +57,10 @@ Node* merge(Node* head1, Node* head2)
     // points dummy node to one of the head
     Node* temp = dummy_node;
     while(temp1 != NULL && temp2 != NULL) { // check till the linked list is valid
-        if(temp1->data > temp2->data){ // compare the data on t1 list and t2 list
-            temp->next = temp1; // if t1 data is higher linked the dummy node(temp) to t1
-            temp = temp1;// move the popinter to t1 , now the temp is in list1
-            temp1 = temp1->next; // move on the list1
+        if(temp1->data > temp2->data){      // compare the data on t1 list and t2 list
+            temp->next = temp1;             // if t1 data is higher linked the dummy node(temp) to t1
+            temp = temp1;                   // move the popinter to t1 , now the temp is in list1
+            temp1 = temp1->next;            // move on the list1
         } else {
             temp->next = temp2;
             temp = temp2;
